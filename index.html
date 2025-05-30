@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nallapareddy Sai Sreeja - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Sai Sreeja</h1>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text-1">NALLAPAREDDY</span>
+                <br>
+                <span class="gradient-text-2">SAI SREEJA</span>
+            </h1>
+            <div class="typewriter-container">
+                <span id="typewriter" class="typewriter"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Passionate about creating innovative software solutions and exploring the frontiers of AI and cybersecurity.
+            </p>
+            <div class="hero-buttons">
+                <button id="download-resume" class="btn btn-primary">
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </button>
+                <button class="btn btn-outline" onclick="scrollToSection('contact')">
+                    Get In Touch
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="card">
+                <div class="card-content">
+                    <p class="about-text">
+                        Motivated and resourceful software engineer with a strong foundation in frontend and full-stack development. 
+                        Proficient in programming languages like Python with expertise in React, CSS, and modern frameworks. 
+                        Skilled in building user-friendly applications, optimizing performance, and solving complex problems through 
+                        efficient coding. Passionate about leveraging my skills to create scalable, responsive, and innovative software 
+                        solutions in a dynamic team environment.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nellore, Andhra Pradesh</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Available for opportunities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-code skill-icon programming"></i>
+                            <h3>Programming</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="skill-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">React.js</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">PHP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-database skill-icon frameworks"></i>
+                            <h3>Frameworks</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="skill-tags">
+                                <span class="tag">OpenCV</span>
+                                <span class="tag">Pygame</span>
+                                <span class="tag">Scikit-learn</span>
+                                <span class="tag">Pandas</span>
+                                <span class="tag">NumPy</span>
+                                <span class="tag">TensorFlow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-tools skill-icon tools"></i>
+                            <h3>Tools</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="skill-tags">
+                                <span class="tag">Git</span>
+                                <span class="tag">Jupyter Notebook</span>
+                                <span class="tag">VS Code</span>
+                                <span class="tag">Kali Linux</span>
+                                <span class="tag">Parrot OS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-cloud skill-icon cloud"></i>
+                            <h3>Cloud</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="skill-tags">
+                                <span class="tag">AWS</span>
+                                <span class="tag">Google Cloud</span>
+                                <span class="tag">Azure</span>
+                                <span class="tag">Oracle</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-shield-alt skill-icon security"></i>
+                            <h3>Security</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="skill-tags">
+                                <span class="tag">Ethical Hacking</span>
+                                <span class="tag">VAPT</span>
+                                <span class="tag">Bug Bounty</span>
+                                <span class="tag">Cryptography</span>
+                                <span class="tag">Risk Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200/1e293b/64748b?text=Laravel+JetSetters" alt="Laravel JetSetters">
+                        <div class="project-overlay"></div>
+                        <span class="project-year">2025</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Laravel JetSetters Web App</h3>
+                        <p>Developed responsive frontend using React.js with modern UI/UX elements and smooth navigation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <button class="btn btn-outline project-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200/1e293b/64748b?text=Steganography+Tool" alt="Steganography Tool">
+                        <div class="project-overlay"></div>
+                        <span class="project-year">2025</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Secure Data Hiding in Image Using Steganography</h3>
+                        <p>Python-based steganography tool using LSB encoding with encryption for enhanced security.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pygame</span>
+                            <span class="tech-tag">Cryptography</span>
+                            <span class="tech-tag">Kali Linux</span>
+                        </div>
+                        <button class="btn btn-outline project-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200/1e293b/64748b?text=ML+Detection" alt="Plastic Bottle Detection">
+                        <div class="project-overlay"></div>
+                        <span class="project-year">2025</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Plastic Bottle Detection using ML</h3>
+                        <p>YOLO and CNN-based model for real-time plastic bottle detection for environmental monitoring.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">YOLO</span>
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                        <button class="btn btn-outline project-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience & Education</h2>
+            
+            <!-- Experience -->
+            <div class="experience-section">
+                <h3 class="subsection-title">Professional Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="experience-info">
+                                    <h4>Frontend Developer (Freelancer)</h4>
+                                    <p class="company">ITO by Infotech</p>
+                                </div>
+                                <span class="period-badge">December 2024 – Present</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Designed and developed responsive, user-friendly websites using HTML, CSS, JavaScript, and React.js. Optimized website performance, ensuring fast load times, cross-browser compatibility, and mobile responsiveness.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="experience-info">
+                                    <h4>Cyber Security Virtual Internship</h4>
+                                    <p class="company">IBM Skill Build & AICTE-Edunet</p>
+                                </div>
+                                <span class="period-badge">January 2025 – Present</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Gained hands-on experience in cybersecurity fundamentals, risk management, and threat analysis. Worked on network security, vulnerability assessment, and penetration testing using industry-standard tools.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="education-section">
+                <h3 class="subsection-title">Education</h3>
+                <div class="education-grid">
+                    <div class="education-item">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="education-info">
+                                    <h4>B.Tech in Artificial Intelligence and Data Science</h4>
+                                    <p class="institution">Sree Venkateswara College of Engineering</p>
+                                </div>
+                                <div class="education-details">
+                                    <span class="period-badge">Expected: April 2026</span>
+                                    <p class="grade">GPA: 72%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="education-info">
+                                    <h4>Intermediate</h4>
+                                    <p class="institution">Aakash Institute, Nellore</p>
+                                </div>
+                                <div class="education-details">
+                                    <span class="period-badge">2022</span>
+                                    <p class="grade">Percentage: 80.5%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="education-info">
+                                    <h4>SSC</h4>
+                                    <p class="institution">Narayana Group Of Schools</p>
+                                </div>
+                                <div class="education-details">
+                                    <span class="period-badge">2020</span>
+                                    <p class="grade">Percentage: 98%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-item">
+                    <div class="card">
+                        <div class="card-content">
+                            <i class="fas fa-award cert-icon"></i>
+                            <p>Introduction to Ethical Hacking (Great Learning)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="card">
+                        <div class="card-content">
+                            <i class="fas fa-award cert-icon"></i>
+                            <p>AWS APAC Solutions Architecture Job Simulation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="card">
+                        <div class="card-content">
+                            <i class="fas fa-award cert-icon"></i>
+                            <p>Artificial Intelligence with Python (IIT Guwahati)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="card">
+                        <div class="card-content">
+                            <i class="fas fa-award cert-icon"></i>
+                            <p>Master Class in Security Engineering (Nxtwave)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="card">
+                        <div class="card-content">
+                            <i class="fas fa-award cert-icon"></i>
+                            <p>Foundations in Cyber Security – Google (Coursera)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="card">
+                        <div class="card-content">
+                            <i class="fas fa-award cert-icon"></i>
+                            <p>Tata Group Cyber Security Job Simulation (Forage)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="card">
+                    <div class="card-content">
+                        <p class="contact-description">
+                            I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology!
+                        </p>
+                        <div class="contact-methods">
+                            <a href="tel:+919949240261" class="contact-method">
+                                <i class="fas fa-phone"></i>
+                                <span>+91-9949240261</span>
+                            </a>
+                            <a href="mailto:saisreejanallapareddy@gmail.com" class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <span>saisreejanallapareddy@gmail.com</span>
+                            </a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/Crazycoders283" target="_blank" class="social-link github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://github.com/Sreeja1509" target="_blank" class="social-link github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/sai-sreeja-nallapareddy" target="_blank" class="social-link linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Nallapareddy Sai Sreeja. Built with HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Floating Social Links -->
+    <div class="floating-social">
+        <a href="https://github.com/Crazycoders283" target="_blank" class="floating-btn github" title="GitHub Profile 1">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/sai-sreeja-nallapareddy" target="_blank" class="floating-btn linkedin" title="LinkedIn Profile">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
